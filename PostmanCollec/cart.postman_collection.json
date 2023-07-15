@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "f54e0ed5-cbe0-443d-a76e-dd410d83342d",
+		"name": "cart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "orderItem1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{ \"cartId\":\"null\",\r\n\t\"orderQuantity\":100,\r\n\t\"customerId\": 1,\r\n\t\"orderItemsQuantity\":1,\r\n\t\"productId\": 1,\r\n    \"productQuantity\":1,\r\n\t \"productPrice\":200\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/order/add"
+			},
+			"response": []
+		},
+		{
+			"name": "orderItem2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{ \"cartId\":1,\r\n\t\"orderQuantity\":1,\r\n\t\"customerId\": 1,\r\n\t\"orderItemsQuantity\":1,\r\n\t\"productId\": 1,\r\n    \"productQuantity\":200,\r\n\t \"productPrice\":200\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/order/add"
+			},
+			"response": []
+		},
+		{
+			"name": "orderItem3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{ \"cartId\":1,\r\n\t\"orderQuantity\":200,\r\n\t\"customerId\": 1,\r\n\t\"orderItemsQuantity\":1,\r\n\t\"productId\": 3,\r\n    \"productQuantity\":10,\r\n\t \"productPrice\":100\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/order/add"
+			},
+			"response": []
+		}
+	]
+}

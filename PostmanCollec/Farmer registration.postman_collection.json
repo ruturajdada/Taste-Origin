@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "4ea5e8c5-0400-4d2f-85bf-e9f2d0555fa5",
+		"name": "Farmer registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"adrLine1\":\"abc\",\r\n        \"adrLine2\":\"xyz\",\r\n        \"city\":\"pune\",\r\n        \"taluka\":\"haveli\",\r\n        \"district\":\"pune\",\r\n        \"state\":\"mh\",\r\n        \"country\":\"india\",\r\n        \"pinCode\":\"345678\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/farmer/address"
+			},
+			"response": []
+		},
+		{
+			"name": "farmer_register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"firstName\":\"Amit\",\r\n    \"lastName\":\"Jadhav\",\r\n    \"email\":\"anmit@gmail.com\",\r\n    \"password\":\"anmit@34\",\r\n    \"contactNumber\":\"3578903678\",\r\n    \"profilePicture\":\"\",\r\n    \"maintainanceAmount\":\"2000\",\r\n    \"receivableAmount\":\"2300\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/farmer/register"
+			},
+			"response": []
+		},
+		{
+			"name": "farmer_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"anmit@gmail.com\",\r\n    \"password\":\"anmit@34\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/farmer/login"
+			},
+			"response": []
+		},
+		{
+			"name": "farmer_logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/farmer/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "product_list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/farmer/products"
+			},
+			"response": []
+		},
+		{
+			"name": "show_list_customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/admin/customers"
+			},
+			"response": []
+		}
+	]
+}

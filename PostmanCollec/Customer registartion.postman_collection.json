@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "35d9a48d-a710-4e67-83cb-5f8d91f387de",
+		"name": "Customer registartion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "customer register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Ankit\",\r\n    \"lastName\":\"Patil\",\r\n    \"email\":\"ankit@gmail.com\",\r\n    \"password\":\"ankit@34\",\r\n    \"contactNumber\":\"3578903678\",\r\n    \"profilePicture\":\"\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/customer/register"
+			},
+			"response": []
+		},
+		{
+			"name": "customern_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ankit@gmail.com\",\r\n    \"password\":\"ankit@34\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/customer/login"
+			},
+			"response": []
+		},
+		{
+			"name": "customer _logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/customer/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "customer_address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"adrLine1\":\"abc\",\r\n        \"adrLine2\":\"xyz\",\r\n        \"city\":\"pune\",\r\n        \"taluka\":\"haveli\",\r\n        \"district\":\"pune\",\r\n        \"state\":\"mh\",\r\n        \"country\":\"india\",\r\n        \"pinCode\":\"345678\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/customer/address"
+			},
+			"response": []
+		},
+		{
+			"name": "customer_register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Prasad\",\r\n    \"lastName\":\"Patil\",\r\n    \"email\":\"prasad@gmail.com\",\r\n    \"password\":\"prasad@153\",\r\n    \"contactNumber\":\"5623897845\",\r\n    \"profilePicture\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/customer/register"
+			},
+			"response": []
+		}
+	]
+}

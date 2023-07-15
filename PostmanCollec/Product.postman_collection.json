@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "75a1a43e-abbe-49cf-800f-4163db0f327b",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "product_add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productTitle\":\"brown_rice\",\r\n    \"price\":\"200\",\r\n    \"harvestedDate\":\"2018-11-01\",\r\n    \"expiryDate\":\"2018-11-07\",\r\n    \"availableStock\":\"2000\",\r\n    \"productImagesByFarmer\":\"\",\r\n    \"isOrganic\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/product/add/1"
+			},
+			"response": []
+		},
+		{
+			"name": "product_update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\":\"1\",\r\n    \"productTitle\":\"rice\",\r\n    \"price\":\"300\",\r\n    \"harvestedDate\":\"2018-11-01\",\r\n    \"expiryDate\":\"2018-11-07\",\r\n    \"availableStock\":\"2000\",\r\n    \"productImagesByFarmer\":\"\",\r\n    \"isOrganic\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/product/update"
+			},
+			"response": []
+		},
+		{
+			"name": "product_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/product/delete/1"
+			},
+			"response": []
+		}
+	]
+}

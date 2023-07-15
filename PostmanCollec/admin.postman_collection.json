@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "547d8e5f-a904-44b6-bfa1-094b9711f5b6",
+		"name": "admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin_register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"tushar\",\r\n    \"email\":\"tushar@gmail.com\",\r\n    \"password\":\"tushar@45\",\r\n    \"contactNumber\":\"2458698956\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/admin/register"
+			},
+			"response": []
+		},
+		{
+			"name": "admin/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"tushar@gmail.com\",\r\n    \"password\":\"tushar@45\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/admin/login"
+			},
+			"response": []
+		}
+	]
+}

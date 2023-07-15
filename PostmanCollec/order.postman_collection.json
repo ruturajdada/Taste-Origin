@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "08acbe8f-31f1-4fb7-a1a1-53c158e77f56",
+		"name": "order",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "review",
+			"item": [
+				{
+					"name": "account -details",
+					"item": [
+						{
+							"name": "customer_acc",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bankAccountNumber\":\"12345\",\r\n    \"ifsc\":\"2345\",\r\n    \"contactNumber\":\"23456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/account/create/customer"
+							},
+							"response": []
+						},
+						{
+							"name": "farmer_acc",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bankAccountNumber\":\"344657\",\r\n    \"ifsc\":\"4578\",\r\n    \"contactNumber\":\"56473\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/account/create/farmer"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "review_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/review/reviews/2"
+					},
+					"response": []
+				},
+				{
+					"name": "reveiw_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"reviewContent\":\"good\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/review/product/1/reviews"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "place_order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cartId\":\"1\",\r\n    \"orderItemsIdArray\":[\"3\",\"4\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/order/place"
+			},
+			"response": []
+		},
+		{
+			"name": "see_oders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/farmer/orders"
+			},
+			"response": []
+		}
+	]
+}

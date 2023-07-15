@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "41c5a0e7-ffad-47cd-aaf7-9123d96d40fd",
+		"name": "subcategory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addsubcategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"subCatgName\":\"rice\",\r\n  \"description\":\"good quality of rice\",\r\n  \"categoryId\":1,\r\n  \"totalStock\": 2000,\r\n  \"subCatgImage\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/subcategory/create"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": []
+		}
+	]
+}

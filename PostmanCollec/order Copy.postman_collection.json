@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "7555c9b0-3a1d-4779-9adf-bbb9142c291f",
+		"name": "order Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "place order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cartId\":1,\r\n  \"orderItemsIdArray\":[\"1\",\"2\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/order/place"
+			},
+			"response": []
+		},
+		{
+			"name": "cancelOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/order/cancel/1"
+			},
+			"response": []
+		}
+	]
+}
